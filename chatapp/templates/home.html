@@ -1,0 +1,27 @@
+{% extends 'layout.html' %} {% block body %}
+
+<div id="root"></div>
+<script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+></script>
+<script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+></script>
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.3.4/react-router-dom.min.js"
+    integrity="sha512-XJ25BbjmZQpaGkOJaDFXVJqfsBebv2aDLsBF3qT6zoC/gVj7XLuefNRzcgmlc5admYuODaYDrap8jzVyOsYFrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+></script>
+<script src="https://unpkg.com/mobx/dist/mobx.umd.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mobx-react-lite@3.1.6/dist/mobxreactlite.umd.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mobx-react@7.0.5/dist/mobxreact.umd.production.min.js"></script>
+<script
+    src="{{ url_for('static', filename='example.jsx') }}"
+    type="text/babel"
+></script>
+
+{% endblock body %}
